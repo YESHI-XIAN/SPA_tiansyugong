@@ -54,11 +54,10 @@
       margin: 5px;
       color: white
     }
-
+    
     .s12_text {
-      background-color: rgba(0, 0, 0, 0.4);
       margin: 5px;
-      color: white
+      color: black
     }
 
     @media screen and (max-width: 768px) {
@@ -121,7 +120,7 @@
     .timeline-section-pointer:hover:before {
       width: 30px;
       height: 30px;
-      border: 10px solid purple;
+      border: 10px solid orange;
     }
 
     @media screen and (max-width: 768px) {
@@ -134,7 +133,7 @@
   </style>
 </head>
 
-<body>
+<body class="btn-beige">
   <!--色票
             <div class="text-primary">藍色</div>
             <div class="text-secondary">灰色</div>
@@ -158,18 +157,7 @@
             <div class="bg-white">白色</div>
             border圓角
   -->
-  <!--s01
-  <section class="btn-beige">
-    <div class="container">
-      <div class="text-end">
-        <a href="https://www.facebook.com/profile.php?id=100064336136028&mibextid=LQQJ4d"><i
-            class="fa-brands fa-square-facebook fa-2x"></i></a>
-        <a href="https://instagram.com/tiansyugong?igshid=NTc4MTIwNjQ2YQ=="><i
-            class="fa-brands fa-square-instagram fa-2x" style="color: #e21736;"></i></a>
-      </div>
-    </div>
-  </section>
-  -->
+
   <!--s02 選單-->
   <section class="btn-beige">
     <div class="container">
@@ -189,48 +177,24 @@
                 <a class="nav-link active" aria-current="page" href="#">首頁</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">覲見蘇王</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  祭典活動
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">蘇王聖壽</a></li>
-                  <li><a class="dropdown-item" href="#">澎湖海巡</a></li>
-                  <li><a class="dropdown-item" href="#">出軍巡香</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">各式活動</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  法會科儀
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">年初祭改補運</a></li>
-                  <li><a class="dropdown-item" href="#">七月中元普渡</a></li>
-                  <li><a class="dropdown-item" href="#">端午消災解厄</a></li>
-                </ul>
+                <a class="nav-link" href="#s04">法會活動公告</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">公益扶助</a>
+                <a class="nav-link" href="#s11">111年普渡法會參與人數</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">文創設計</a>
+                <a class="nav-link" href="#s12">普渡法會總流程</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">聯絡我們</a>
+                <a class="nav-link" href="#s06">普渡會場參拜動線</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#s07">天虛宮簡介</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#s08">天虛宮地圖</a>
               </li>
             </ul>
-            <form class="d-flex col-3" role="search">
-              <a href="#" class="btn btn-warning me-1" data-bs-toggle="modal" data-bs-target="#loginModal">登入</a>
-              <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#regModal">註冊</a>
-            </form>
             <div class="text-end">
               <a href="https://www.facebook.com/profile.php?id=100064336136028&mibextid=LQQJ4d"><i
                   class="fa-brands fa-square-facebook fa-2x"></i></a>
@@ -243,96 +207,6 @@
     </div>
   </section>
 
-  <!-- loginModal登入 -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header text-bg-warning">
-          <h1 class="modal-title fs-3 text-white" id="exampleModalLabel">會員登入</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="" class="form-label">帳號</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">密碼</label>
-            <input type="password" class="form-control">
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#regModal" class="me-auto">還沒有帳號，註冊區</a>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-          <button type="button" class="btn btn-primary">確認</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- regModal註冊registerModal(完整的註冊單字) -->
-  <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header text-bg-success">
-          <h1 class="modal-title fs-3 text-white" id="exampleModalLabel">會員註冊</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-6">
-              <h3 class="fw-700">服務條款與隱私權政策</h3>
-              <h4>一、隱私權保護政策的適用範圍</h4>
-              <h6>隱私保護政策，包括本網站內容如何處理在您使用網站服務時收集到的個人識別資料。管理人員。</h6>
-              <h4>二、個人資料的用法、處理及利用方式</h4>
-              <h6><i
-                  class="fa-solid fa-circle-dot"></i>當您造訪本網站或使用本網站所提供的非功能服務時，我們將視該服務功能，請您提供必要的個人資料，並在該特定範圍內處理及利用您的個人資料；經您書面同意，本網站不會將個人資料用於其他用途。<br>
-                <h6><i class="fa-solid fa-circle-dot"></i>本網站在您的使用服務信箱、問卷調查等互動性功能時，會保留您所提供的姓名、電子郵件地址、聯繫方式及使用時間等。</h6>
-                <br>
-                <h6><i
-                    class="fa-solid fa-circle-dot"></i>於瀏覽時，服務器會自行記錄相關行徑，包括您使用連線設備的IP位址、使用時間、使用瀏覽器、瀏覽及點選資料記錄等，為我們增進網站服務的參考資料，此記錄為內在應用，決不會過度放映。
-                </h6><br>
-                <h6><i
-                    class="fa-solid fa-circle-dot"></i>為了提供合理的服務，我們將收集分析問卷調查內容進行統計，分析結果的統計數據或文字說明，但除供內部研究外，我們會視需要公佈的統計數據及文字說明，不涉及特定的個人之資料。
-                </h6><br>
-              </h6>
-              <h4>三、資料之保護</h4>
-              <h6>只需要經過授權的人員才能接觸到您的個人資料，如因其他業務需要有必要的委託單位提供服務時，本網站亦會嚴格要求其拒絕義務，並且需要檢查程序需要其一定的堅持。</h6>
-              <h4>四、與第三人消耗個人資料之政策</h4>
-              <h6>本網站不會提供、交換、出租或拒絕任何您的個人資料給其他個人、個人、私人企業或公務機關，但有法律聲明或合同義務者，不在此限。</h6>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input"></input>
-                <label for="" class="form-check-label">遵守以上所述</label>
-              </div>
-            </div>
-            <div class="col-6 my-auto">
-              <div class="mb-3">
-                <label for="" class="form-label">帳號</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">密碼</label>
-                <input type="password" class="form-control">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">確認密碼</label>
-                <input type="password" class="form-control">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Email</label>
-                <input type="email" class="form-control">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" class="me-auto">已經有會員</a>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-          <button type="button" class="btn btn-primary">確認</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!--s03 輪播效果 carousel-->
   <section>
@@ -356,13 +230,13 @@
             <p>王爺聖誕會舉行一連串祝壽活動，宴王宴、百福宴、賜福、擲金錢龜、歌仔戲</p>
           </div>
         </div>
-        <div class="carousel-item bg-cover" style="background-image: url(images/2-19.jpg);height: 800px;">
+        <div class="carousel-item bg-cover" style="background-image: url(images/8-34.jpg);height: 800px;">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="fw-700">澎湖海巡</h5>
             <p>王爺慈悲 跨海鎮孤 賜福百姓 廣結善緣 </p>
           </div>
         </div>
-        <div class="carousel-item bg-cover" style="background-image: url(images/4-1.jpg);height: 800px;">
+        <div class="carousel-item bg-cover" style="background-image: url(images/8-2.jpg);height: 800px;">
           <div class="carousel-caption d-none d-md-block">
             <h5>出軍巡香</h5>
             <p>王爺出軍 除瘟降福 巡庄遶里 合境平安 </p>
@@ -374,7 +248,7 @@
             <p>王爺開恩 祈安禮斗 迎富送窮 陰施陽補</p>
           </div>
         </div>
-        <div class="carousel-item bg-cover" style="background-image: url(images/1-4.jpg);height: 800px;">
+        <div class="carousel-item bg-cover" style="background-image: url(images/8-1.jpg);height: 800px;">
           <div class="carousel-caption d-none d-md-block">
             <h5>七月普渡</h5>
             <p>王爺恩主 普渡眾生 慶讚中元 冥陽兩利</p>
@@ -401,26 +275,25 @@
       <div class="col-md-5 bg-cover s05_img" style="position: absolute;
         top: 0;
         bottom: 0;
-        background-image: url(images/5-2.jpg);">
+        background-image: url(images/6-2.jpg);">
       </div>
     </div>
     <div class="container">
       <div class="row justify-content-end py-5">
         <div class="col-md-7 s05_text">
           <h2 class="fw-900">禮斗法會</h2>
-          <p>
-            藉由禮斗法會的科儀，運用八卦的原理，可以運轉個人的運勢，達到造財庫補財庫、元神光彩 神體健的效果
-            再用草人打替身，讓草人承擔您的病惡災厄，達到趨吉避凶，降低各種小人阻礙的阻力，且把阻力化成助力，做任何事情都可以事半功倍
+          <p class="fw-700">
+            藉由禮斗法會的科儀，運用八卦的原理，可以運轉個人的運勢，達到造財庫補財庫、元神光彩、神體健康的效果，
+            用草人打替身，讓草人承擔您的病惡災厄，達到趨吉避凶，降低各種小人阻礙的阻力，且把阻力化成助力，做任何事情都可以事半功倍，並過平安七星橋，請神明化解關煞，讓您今年一帆風順
           </p>
-          <a href="#" class="btn btn-outline-primary">查看更多</a>
           <div class="row my-3">
             <div class="col-md-6">
               <h3 class="fw-700">中元普渡</h3>
-              <p>七月普渡法會，超渡冤親債主、祖先、個魂、地基主、嬰靈、動物靈，使其離苦得樂，早日投胎轉世，亦可解冤釋結，了其因果</p>
+              <p class="fw-700">七月普渡法會，超渡冤親債主、祖先、個魂、地基主、嬰靈、動物靈，使其離苦得樂，早日投胎轉世，亦可解冤釋結，了其因果</p>
             </div>
             <div class="col-md-6">
               <h3 class="fw-700">山海巡香</h3>
-              <p>跟著王爺一同前往鎮孤救世積功德，也因王爺罡氣正氣較其他神明多，所以也可參與志工來強化自身的能量</p>
+              <p class="fw-700">跟著王爺一同前往鎮孤救世積功德，也因王爺罡氣正氣較其他神明多，所以也可參與志工來強化自身的能量</p>
             </div>
           </div>
         </div>
@@ -429,28 +302,28 @@
   </section>
 
   <!--s04 三大服務項目 01禮斗法會 02中元普渡 03山海巡香-->
-  <section class="btn-beige">
+  <section class="btn-beige" id="s04">
     <div class="container">
       <div class="row">
         <div class="col-md-4 text-center p-3">
           <i class="fa-solid fa-umbrella fa-6x text-danger"></i>
           <div><!-- <div class="d-none d-md-block">-->
-            <h2 class="my-3 fw-700 text-danger">禮斗法會</h2>
-            <p class="fw-300 text-dark">在年初時藉由祈安禮斗法會消災祈福，用禮斗運轉八門，使其元神光彩、運勢亨通，再用草人打替身，消災解厄，大事化小、小事化無</p>
+            <h2 class="my-3 fw-900 text-danger">禮斗法會(每年年初)</h2>
+            <p class="fw-700 text-dark">在年初時藉由祈安禮斗法會消災祈福，用禮斗運轉八門，使其元神光彩、運勢亨通，再用草人打替身，消災解厄，大事化小、小事化無</p>
           </div>
         </div>
         <div class="col-md-4 text-center p-3">
           <i class="fa-solid fa-gopuram fa-6x text-success"></i>
           <div><!-- <div class="d-none d-md-block">-->
-            <h2 class="my-3 fw-700 text-success">中原普渡</h2>
-            <p class="fw-300 text-dark">在七月中旬舉辦普渡科儀，消除業障、解冤釋結，將小人阻力化為助力，讓祖先離苦得樂早日脫離苦海</p>
+            <h2 class="my-3 fw-900 text-success">中元普渡(每年年中)</h2>
+            <p class="fw-700 text-dark">在七月中旬舉辦普渡科儀，消除業障、解冤釋結，將小人阻力化為助力，讓祖先離苦得樂早日脫離苦海</p>
           </div>
         </div>
         <div class="col-md-4 text-center p-3">
           <i class="fa-solid fa-synagogue fa-6x text-warning"></i>
           <div><!-- <div class="d-none d-md-block">-->
-            <h2 class="my-3 fw-700 text-warning">山海巡香</h2>
-            <p class="fw-300 text-dark">於年中下旬舉行澎湖海巡及進香巡香，去澎湖沿途海峽鎮孤，去北或南部巡香，以達合境平安、四鎮安定、國泰民安</p>
+            <h2 class="my-3 fw-900 text-warning">山海巡香(每年年中下半年)</h2>
+            <p class="fw-700 text-dark">於年中下旬舉行澎湖海巡及進香巡香，去澎湖沿途海峽鎮孤，去北或南部巡香，以達合境平安、四鎮安定、國泰民安</p>
           </div>
         </div>
       </div>
@@ -459,7 +332,7 @@
 
 
   <!--s11-->
-  <section style="position: relative;" class=btn-beige>
+  <section style="position: relative;" class=btn-beige id="s11">
     <div class="row">
       <div class="col-md-5 bg-cover s05_img" style="position: absolute;
       top: 0;
@@ -469,8 +342,8 @@
     </div>
     <div class="container">
       <div class="row justify-content-end">
-        <div class="col-md-7 py-5 s05_text">
-          <h2 class="fw-900">111年普渡參與人數</h2>
+        <div class="col-md-7 py-5 so7_text">
+          <h2 class="fw-900">111年普渡法會參與人數</h2>
           <p class="col-md-6">
             七月普渡法會，超渡冤親債主、祖先、個魂、地基主、嬰靈、動物靈，使其離苦得樂，早日投胎轉世，亦可解冤釋結，了其因果，因此每年參與人數逐年增家
           </p>
@@ -497,32 +370,32 @@
     </div>
   </section>
 
-  <!--s12 時間軸普渡流程-->
+  <!--s12 時間軸普渡總流程-->
 
-  <section class="bg-cover" style="background-image: url(images/5-5.jpg);">
+  <section class=btn-beige id="s12">
     <div class="container">
       <div class="row align-items-center ">
         <div class="col-md-4 text-center p-3 s12_text">
-          <i class="fa-solid fa-house fa-6x text-danger"></i>
+          <i class="fa-solid fa-arrow-down-short-wide fa-6x text-primary"></i>
           <div><!-- <div class="d-none d-md-block">-->
-            <h2 class="my-3 fw-700 text-danger">癸卯年普渡流程</h2>
-            <p class="fw-700 text-white">介紹當天從開始到圓滿該做的事情</p>
+            <h2 class="my-3 fw-700 text-primary">癸卯年普渡法會總流程</h2>
+            <p class="fw-700 text-dark">(介紹當天從開始到圓滿該做的事情)</p>
           </div>
         </div>
-        <div class="col-md-6 text-center p-3">
-          <div class="container p-5">
+        <div class="col-md-6 text-center p-1">
+          <div class="container p-3">
             <div class="timeline-section">
               <div class="row align-items-center timeline-section-pointer">
                 <div class="col-md-6 text-center">
                   <div class="mytext s12_text">
                     <h2 class="fw-900">01到天虛宮參拜王爺</h2>
                     <p class="fw-700">
-                      約一點30分先到天虛宮內參拜蘇府王爺，稟告王業今天有做那些科儀，恭請蘇府王爺做主，讓今天慘語的科儀一切順利
+                      約一點三十分先到天虛宮內參拜蘇府王爺，稟告王爺今天有做那些科儀，恭請蘇府王爺做主，讓今天參與的科儀一切順利
                     </p>
                   </div>
                 </div>
                 <div class="col-md-6 text-center">
-                  <div class="myimg bg-cover" style="background-image: url(images/2-19.jpg); height: 280px;"></div>
+                  <div class="myimg bg-cover" style="background-image: url(images/6-8.jpg); height: 280px;"></div>
                 </div>
               </div>
               <div class="row align-items-center timeline-section-pointer flex-row-reverse">
@@ -535,7 +408,7 @@
                   </div>
                 </div>
                 <div class="col-md-6 text-center">
-                  <div class="myimg bg-cover" style="background-image: url(images/2-4.jpg); height: 280px;"></div>
+                  <div class="myimg bg-cover" style="background-image: url(images/4-4.jpg); height: 280px;"></div>
                 </div>
               </div>
               <div class="row align-items-center timeline-section-pointer">
@@ -548,7 +421,7 @@
                   </div>
                 </div>
                 <div class="col-md-6 text-center">
-                  <div class="myimg bg-cover" style="background-image: url(images/4-1.jpg); height: 280px;"></div>
+                  <div class="myimg bg-cover" style="background-image: url(images/7-1.jpg); height: 280px;"></div>
                 </div>
               </div>
               <div class="row align-items-center timeline-section-pointer  flex-row-reverse">
@@ -556,12 +429,12 @@
                   <div class="mytext s12_text">
                     <h2 class="fw-900">圓滿灑淨淨身04</h2>
                     <p class="fw-700">
-                      所有參與得項目均擲到聖杯，就可以離開了(現在我們是統以焚燒金紙，所以不用拿金紙去焚燒)，離開時，會場的門口會放置王爺家持的平安水，可以將身體灑淨淨身，避免有另一個空間的跟著您回家
+                      所有參與得項目均擲到聖杯，就可以離開了(現在我們是統一焚燒金紙，所以不用拿金紙去焚燒)，離開時，會場的門口會放置王爺加持的平安水，可以將身體灑淨淨身，避免有另一個空間的跟著您回家
                     </p>
                   </div>
                 </div>
                 <div class="col-md-6 text-center">
-                  <div class="myimg bg-cover" style="background-image: url(images/5-2.jpg); height: 280px;"></div>
+                  <div class="myimg bg-cover" style="background-image: url(images/7-2.jpg); height: 280px;"></div>
                 </div>
               </div>
             </div>
@@ -571,47 +444,48 @@
     </div>
   </section>
 
-  <!--s06 普渡各單位-->
-  <section class="bg-light">
+  <!--s06 普渡會場參拜動線-->
+  <section class="btn-beige" id="s06">
     <div class="container">
-      <div class="display-3 text-center fw-900">普渡會場參拜動線</div>
+      <div class="display-3 text-center fw-900 mt-5">普渡會場參拜動線</div>
       <div class="row">
         <div class="col-md-6">
           <div class="d-flex align-items-center">
-            <i class="fa-solid fa-1 fa-6x me-3 text-info"></i>
+            <i class="fa-solid fa-1 fa-5x mt-3 me-4 ms-2 text-info ms-1"></i>
             <div>
-              <h2 class="text-primary">參拜法會會場的王爺王爺</h2>
-              <p>拿一份王爺金，焚香誠心祈求進田所謂合適
+              <h2 class="text-primary mt-3">參拜王爺</h2>
+              <p>神壇前焚香參拜王爺<br>
+                (共需拿9柱香)
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="d-flex align-items-center">
-            <i class="fa-solid fa-2 fa-6x me-3 text-info"></i>
+            <i class="fa-solid fa-2 fa-5x ms-1 me-4 mt-4 text-info"></i>
             <div>
-              <h2 class="text-primary">參拜大士爺</h2>
-              <p>親自預測設為美麗儘管手裡沒想到台鐵房子更大團體當天故障，這款說到不承擔處理器一片，存在藥品，楠雅保。親自預測設為美麗儘管手裡沒想到台鐵房子更大團體當天故障，這款說到不承擔處理器一片，存在藥品，楠雅保。
+              <h2 class="text-primary mt-2">參拜大士爺</h2>
+              <p>請拿一柱香
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="d-flex align-items-center">
-            <i class="fa-solid fa-3 fa-6x me-3 text-info"></i>
+            <i class="fa-solid fa-3 fa-5x ms-1 me-4 text-info"></i>
             <div>
-              <h2 class="text-primary">順時針從祖先牌位開始參拜</h2>
-              <p>親自預測設為美麗儘管手裡沒想到台鐵房子更大團體當天故障，這款說到不承擔處理器一片，存在藥品，楠雅保。親自預測設為美麗儘管手裡沒想到台鐵房子更大團體當天故障，這款說到不承擔處理器一片，存在藥品，楠雅保。
+              <h4 class="text-primary mt-4">個人冤親債主牌位<br>(祖先牌位、地基主、<br>嬰靈、動物靈、藥師壇)</h4>
+              <p>請依序排隊至牌位前各插一柱香即可
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="d-flex align-items-center">
-            <i class="fa-solid fa-4 fa-6x me-3 text-info"></i>
+            <i class="fa-solid fa-4 fa-5x me-4 mb-2 text-info"></i>
             <div>
-              <h2 class="text-primary">圓滿灑淨淨身</h2>
-              <p>親自預測設為美麗儘管手裡沒想到台鐵房子更大團體當天故障，這款說到不承擔處理器一片，存在藥品，楠雅保。親自預測設為美麗儘管手裡沒想到台鐵房子更大團體當天故障，這款說到不承擔處理器一片，存在藥品，楠雅保。
+              <h2 class="text-primary">5分鐘後至牌位前擲杯</h2>
+              <p>請至有參與的牌位前擲杯詢問是否<br>有到，如果到了，可以跟其訴說移至<br>藥師壇找藥王靈療醫治身體、訴說思念、了結恩怨...等等
               </p>
             </div>
           </div>
@@ -620,36 +494,49 @@
     </div>
   </section>
 
-  <!--s07 宮的主旨 搭配圖片-->
-  <section class="my-4" style="position: relative;">
+  <!--s07 宮的介紹 搭配圖片-->
+  <section class="my-4" style="position: relative;" id="s07">
     <div class="container">
       <div class="row">
-        <div class="col-md-7">
-          <dl class="row">
-            <h2>潭子天虛宮介紹</h2>
-            <P>宮旨:以心待人 以愛待人 以慈待人</P>
-            <dt class="col-sm-3">創立原因</dt>
-            <dd class="col-sm-9">原本只在家中供奉祭祀，後來王爺聖示開宮濟世，至今已十幾載</dd>
+        <div class="col-md-7 so7_text">
+          <dl class="row s09_text">
+            <p>
+            <h2>潭子天虛宮介紹</2>
+              </p>
+              <h5>主神:蘇府大、二、三爺</h5>
+              <h6>宮旨:以心待人 以愛待人 以慈待人</h6>
+              <dt class="col-sm-3">創立原因</dt>
+              <dd class="col-sm-9">原本只在家中供奉祭祀，後來王爺聖示開宮濟世，至今已十幾載</dd>
 
-            <dt class="col-sm-3">濟世時間</dt>
-            <dd class="col-sm-9">
-              <p>星期一與星期五下午五點報名七點半辦事</p>
-              <p>逢農曆正月七月停辦(準確時間依照潭子天虛宮FB公告)</p>
-            </dd>
+              <dt class="col-sm-3">濟世時間</dt>
+              <dd class="col-sm-9">
+                <p>星期一與星期五下午五點報名七點半辦事</p>
+                <p>逢農曆正月七月停辦<br>(準確時間依照潭子天虛宮FB公告)
+                  <a href="https://www.facebook.com/profile.php?id=100064336136028&mibextid=LQQJ4d"><i
+                      class="fa-brands fa-square-facebook fa-2x"></i>
+                  </a>
+                </p>
+              </dd>
+              <dt class="col-sm-3">濟世服務項目</dt>
+              <dd class="col-sm-9">事業、運途、身體、祭改、收驚、姻緣</dd>
 
-            <dt class="col-sm-3">濟世服務項目</dt>
-            <dd class="col-sm-9">事業、運途、身體、祭改、收驚、姻緣</dd>
+              <dt class="col-sm-3 text-truncate">連絡電話:04-25381815</dt>
+              <dd class="col-sm-9">地址:台中市潭子區嘉仁里仁愛路二10號</dd>
 
-            <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-            <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
-
-            <dt class="col-sm-3">各活動報名方法</dt>
-            <dd class="col-sm-9">
-              <dl class="row">
-                <dt class="col-sm-4"><h4>①</h4>可用下列表格預先寫基本資料</dt>
-                <dd class="col-sm-8"><h4>②</h4>直接至潭子天虛宮現場報名</dd>
-              </dl>
-            </dd>
+              <dt class="col-sm-3">聯絡詢問方法</dt>
+              <dd class="col-sm-9">
+                <dl class="row">
+                  <dt class="col-sm-3">
+                    <h4>①</h4>電話
+                  </dt>
+                  <dt class="col-sm-3 text-nowrap">
+                    <h4>②</h4>臉書私訊
+                  </dt>
+                  <dt class="col-sm-6">
+                    <h4>③</h4>潭子天虛宮宮址
+                  </dt>
+                </dl>
+              </dd>
           </dl>
         </div>
       </div>
@@ -657,56 +544,20 @@
     <div class="row justify-content-end">
       <div class="col-md-5 bg-cover s07_img" style="
       position: absolute;
-      background-image: url(images/3-2.jpg);
+      background-image: url(images/8-9.jpg);
       top: 0;
       bottom: 0;"></div>
     </div>
   </section>
 
   <!--s08 地圖 詢問表單-->
-  <section>
+  <section id="s08">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.6873152601374!2d120.7143996!3d24.217728400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346919dfae4330e3%3A0x32be556677b2c91c!2z5Y-w5Lit5r2t5a2Q5aSp6Jmb5a6u!5e0!3m2!1szh-TW!2stw!4v1692235229986!5m2!1szh-TW!2stw"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="col-md-6">
-          <div class="mb-3">
-            <label for="" class="form-label">姓名</label>
-            <input type="text" class="form-control">
-            <div class="mb-3">
-              <label for="" class="form-label">電話</label>
-              <input type="phone" class="form-control">
-              <div class="mb-3">
-                <label for="" class="form-label">email</label>
-                <input type="email" class="form-control">
-                <div class="mb-3">
-                  <label for="" class="form-label">人數</label>
-                  <input type="number" class="form-control" min="1" max="20">
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    想要參與普渡
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                  <label class="form-check-label" for="flexCheckChecked">
-                    想要參與山海巡香
-                  </label>
-                </div>
-                <div class="text-end my-3">
-                  <a href="#" class="btn btn-secondary">取消</a>
-                  <a href="#" class="btn btn-primary">確認</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.6873152601374!2d120.7143996!3d24.217728400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346919dfae4330e3%3A0x32be556677b2c91c!2z5Y-w5Lit5r2t5a2Q5aSp6Jmb5a6u!5e0!3m2!1szh-TW!2stw!4v1692235229986!5m2!1szh-TW!2stw"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
@@ -722,7 +573,7 @@
             <p class="fw-700">
               因廟宇整體空間不足，且考量多種因素，王爺聖示要興建廟宇，廣邀十方信眾一同來完成王爺的建廟大業積功德，共同努力幫助更多需要幫助的人們，一起加入潭子天虛宮這個大家庭
             </p>
-            <a href="#" class="btn btn-outline-danger">加入我們</a>
+            <a href="https://forms.gle/adFQ9GgZnjPRqpcQ7" class="btn btn-danger">加入我們</a>
           </div>
         </div>
       </div>
@@ -734,7 +585,7 @@
             <p class="fw-700">
               廟宇有很多需要你的專長、付出，一同跟王爺濟世救世，我們有伙食班、誦經班、神轎班、陣頭班，我們是有規矩、禮儀注重團對合作，以王爺為中心的團體，需要的正是你!
             </p>
-            <a href="#" class="btn btn-outline-success">加入我們</a>
+            <a href="https://forms.gle/adFQ9GgZnjPRqpcQ7" class="btn btn-success">加入我們</a>
           </div>
         </div>
       </div>
@@ -742,18 +593,12 @@
   </section>
 
   <!--s10 版權宣告 友善連結-->
-  <footer>
+  <footer class="justify-content-center">
     <section>
       <div class="container">
-        <ul class="nav">
+        <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link disabled">Copyright © 潭子天虛宮官方網站 Web All Rights Reserved.</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">友站01</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">友站02</a>
+            <a class="nav-link disabled text-center">Copyright © 潭子天虛宮官方網站 Web All Rights Reserved.</a>
           </li>
         </ul>
       </div>
